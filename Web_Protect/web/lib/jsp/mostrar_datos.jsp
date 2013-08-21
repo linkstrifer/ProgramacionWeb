@@ -10,22 +10,22 @@
         <div class="container">
             <h1>Datos del cliente</h1>
             <%
-                String id_cliente=(String) request.getParameter("id_cliente");
-                String nombres=(String) request.getParameter("nombres");
-                String direccion=(String) request.getParameter("direccion");
-                String telefijo=(String) request.getParameter("telefijo");
-                String celular=(String) request.getParameter("celular");
+                String id=(String) request.getParameter("id");
+                String names=(String) request.getParameter("names");
+                String address=(String) request.getParameter("address");
+                String phone=(String) request.getParameter("phone");
+                String cellphone=(String) request.getParameter("cellphone");
             %>
             <span class="full"><b>Id Cliente:</b></span>
-            <span class="full"><%= id_cliente%></span>
+            <span class="full"><%= id %></span>
             <span class="full"><b>Nombres:</b></span>
-            <span class="full"><%= nombres%></span>
+            <span class="full"><%= names %></span>
             <span class="full"><b>Dirección:</b></span>
-            <span class="full"><%= direccion%></span>
+            <span class="full"><%= address %></span>
             <span class="full"><b>Télefono:</b></span>
-            <span class="full"><%= telefijo%></label></td>
+            <span class="full"><%= phone %></label></td>
             <span class="full"><b>Celular:</b></span>
-            <span class="full"><%= celular%></span>
+            <span class="full"><%= cellphone %></span>
             <a href="/webApplication/index.jsp">Regresar</a>
         </div>
     </body>
