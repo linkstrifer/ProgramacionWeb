@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="container">
-            <h1>Datos del cliente</h1>
+            <h1 class="capitalize-f">datos del cliente</h1>
             <%
                 String id=(String) request.getParameter("id");
                 String names=(String) request.getParameter("names");

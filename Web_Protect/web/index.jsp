@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <form id="form1" name="form1" method="post" action="Servlet_Servicios">
-                <h2 align="center capitalize-f">registrar</h2>
+                <h1 class=" capitalize-f">registrar</h1>
                 <label class="full">
                     <span class="capitalize-f">id cliente</span>
                     <input type="text" name="id" id="id" />
