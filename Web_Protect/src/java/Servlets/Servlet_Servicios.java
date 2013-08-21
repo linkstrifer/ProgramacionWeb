@@ -1,6 +1,7 @@
 
 package Servlets;
 
+import Operaciones.setData;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.*;
@@ -57,15 +58,18 @@ public class Servlet_Servicios extends HttpServlet {
                 out.print("<p> <Strong>Nombres=  "+Nombres);
                 out.print("<p> <Strong>Direccion=  "+Direccion);
                 out.print("<p> <Strong>Telefojo Fijo=  "+Telefono_Fijo);
-                out.print("<p> <Strong> Celular=   "+Celular);*/
-
+                out.print("<p> <Strong> Celular=   "+Celular);
                 request.setAttribute("id",id);
                 request.setAttribute("nombres",names);
                 request.setAttribute("dirección",address);
                 request.setAttribute("télefono",phone);
                 request.setAttribute("celular",cellphone);
                 request.setAttribute("enviar",send);
-                request.setAttribute("actualizar",refresh);
+                request.setAttribute("actualizar",refresh);*/
+                if( setData.set( new setData(id,names,address,phone,cellphone) ) )
+                {
+                    request.getRequestDispatcher("/webApplication/index.jsp").forward( request, response );
+                }
                               }
             if ( refresh != null ){
             }
