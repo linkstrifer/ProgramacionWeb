@@ -44,31 +44,30 @@ public class Servlet_Servicios extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         try{
-            String Id_Cliente=request.getParameter("Id_Cliente");
-            String Nombres=request.getParameter("Nombres");
-            String Direccion=request.getParameter("Direccion");
-            String Telefono_Fijo=request.getParameter("Telefono_Fijo");
-            String Celular=request.getParameter("Celular");
-            String Enviar=request.getParameter("Enviar");
-            String Actualizar=request.getParameter("Actualizar");
+            String id = request.getParameter("id");
+            String names = request.getParameter("names");
+            String address = request.getParameter("address");
+            String phone = request.getParameter("phone");
+            String cellphone = request.getParameter("cellphone");
+            String send = request.getParameter("send");
+            String refresh = request.getParameter("refresh");
 
-            if (Enviar!=null){
+            if ( send != null ){
                /* out.print("<p> <Strong>ID Cliente=  "+Id_Cliente);
                 out.print("<p> <Strong>Nombres=  "+Nombres);
                 out.print("<p> <Strong>Direccion=  "+Direccion);
                 out.print("<p> <Strong>Telefojo Fijo=  "+Telefono_Fijo);
                 out.print("<p> <Strong> Celular=   "+Celular);*/
 
-                request.setAttribute("Id_Cliente",Id_Cliente);
-                request.setAttribute("Nombres",Nombres);
-                request.setAttribute("Direccion",Direccion);
-                request.setAttribute("Telefono_Fijo",Telefono_Fijo);
-                request.setAttribute("Celular",Celular);
-                request.setAttribute("Enviar",Enviar);
-                request.setAttribute("Actualizar",Actualizar);
+                request.setAttribute("id",id);
+                request.setAttribute("nombres",names);
+                request.setAttribute("dirección",address);
+                request.setAttribute("télefono",phone);
+                request.setAttribute("celular",cellphone);
+                request.setAttribute("enviar",send);
+                request.setAttribute("actualizar",refresh);
                               }
-            if (Actualizar!=null){
-            out.println("<strong>USTED PRESIONO EL BOTON ACTUALIZAR");
+            if ( refresh != null ){
             }
     }
     catch(Exception e){}
