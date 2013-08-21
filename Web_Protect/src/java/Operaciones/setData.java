@@ -23,7 +23,7 @@ public class setData {
         dbManager dbManager = new dbManager();
         Connection connection = dbManager.getConnection();
         
-        PreparedStatement sql = connection.prepareStatement("insert into schedule(id,names,address,phone,cellphone) values (?,?,?,?,?)");
+        PreparedStatement sql = connection.prepareStatement("INSERT INTO schedule(id,inames,address,phone,cellphone) VALUES (?,?,?,?,?)");
         
         sql.setString(1, data.getId() );
         sql.setString(2, data.getNames() );

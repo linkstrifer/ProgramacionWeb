@@ -38,7 +38,7 @@ public class Servlet_Servicios extends HttpServlet {
     } 
 
   
-        protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         processRequest(request, response);
 
@@ -50,16 +50,17 @@ public class Servlet_Servicios extends HttpServlet {
             String address = request.getParameter("address");
             String phone = request.getParameter("phone");
             String cellphone = request.getParameter("cellphone");
+            
             String send = request.getParameter("send");
             String refresh = request.getParameter("refresh");
 
             if ( send != null ){
-               /* out.print("<p> <Strong>ID Cliente=  "+Id_Cliente);
-                out.print("<p> <Strong>Nombres=  "+Nombres);
-                out.print("<p> <Strong>Direccion=  "+Direccion);
-                out.print("<p> <Strong>Telefojo Fijo=  "+Telefono_Fijo);
-                out.print("<p> <Strong> Celular=   "+Celular);
-                request.setAttribute("id",id);
+                out.print(id);
+                out.print(names);
+                out.print(address);
+                out.print(phone);
+                out.print(cellphone);
+                /*request.setAttribute("id",id);
                 request.setAttribute("nombres",names);
                 request.setAttribute("dirección",address);
                 request.setAttribute("télefono",phone);
