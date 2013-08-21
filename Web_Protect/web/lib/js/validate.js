@@ -1,33 +1,33 @@
-function verificar( servi )
+function validate( form )
         {           
-            if ( servi.id_cliente.value == "")
+            if ( form.id.value == "")
             {
                 alert( "Falta Cedula/Nit" );
-                servi.id_cliente.focus();
+                form.id.focus();
                 return false;
             }
-            if ( servi.nombre.value == "" )
+            if ( form.names.value == "" )
             {
                 alert( "Falta el Nombre" );
-                servi.nombre.focus();
+                form.names.focus();
                 return false;
             }
-            if ( servi.direccion.value == "" )
+            if ( form.address.value == "" )
             {
                 alert( "Falta la Direccion" );
-                servi.direccion.focus();
+                form.address.focus();
                 return false;
             }
-            if ( servi.telefono.value == "" )
+            if ( form.phone.value == "" )
             {
                 alert( "Falta el Telefono" );
-                servi.telefono.focus();
+                form.phone.focus();
                 return false;
             }
-              if ( servi.celular.value == "" )
+              if ( form.cellphone.value == "" )
             {
                 alert( "Falta el celular" );
-                servi.celular.focus();
+                form.cellphone.focus();
                 return faflse;
             }
          return true;

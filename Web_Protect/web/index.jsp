@@ -5,11 +5,11 @@
         <meta charset="utf-8" />
         <title>Inicio</title>
         <link rel="stylesheet" href="/webApplication/lib/css/style.css">
-        <script src="/webApplication/validar.js"></script>
+        <script src="/webApplication/lib/js/validate.js"></script>
     </head>
     <body>
         <div class="container">
-            <form id="form1" name="form1" method="post" action="Servlet_Servicios">
+            <form id="form1" name="form1" method="post" action="Servlet_Servicios" onsubmit="return validate(this);">
                 <h1 class=" capitalize-f">registrar</h1>
                 <label class="full">
                     <span class="capitalize-f">id cliente</span>
